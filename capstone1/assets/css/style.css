@@ -1,31 +1,31 @@
 
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html,
 body {
-/*	background: url(../images/vector.jpg) no-repeat center center fixed;
-	background-size: cover;
-	z-index: -10;
-	display: block;*/
-/*	margin-top: -70px;
-	padding-top: 80px;*/
-	background: #f2f2f2;
-	height: 100%;
-	width: 100%;
-	font-family: 'Roboto Mono', monospace;
+/*  background: url(../images/vector.jpg) no-repeat center center fixed;
+    background-size: cover;
+    z-index: -10;
+    display: block;*/
+/*  margin-top: -70px;
+    padding-top: 80px;*/
+/*    background: #f2f2f2;
+    height: 100%;
+    width: 100%;*/
+    font-family: 'Roboto Mono', monospace;
 }
 
 .navbar {
-	padding: .8rem;
+    padding: .8rem;
 }
 
 .navbar-nav li {
-	padding-right: 50px;
+    padding-right: 50px;
 }
 
 .me {
@@ -33,41 +33,41 @@ body {
     border-radius: 50%;
 }
 
-.card-img-top {
+/*.card-img-top {
     height: 15rem;
     object-fit: cover;
-}
+}*/
 
 .fa-html5:hover {
-	color: #e34f26;
+    color: #e34f26;
 }
 
 .fa-bold:hover {
-	color: #511378;
+    color: #511378;
 }
 
 .fa-css3-alt:hover {
-	color: #037ef3;
+    color: #037ef3;
 }
 .fa-gitlab:hover {
-	color: #fca326;
+    color: #fca326;
 }
 
 .fa-github:hover {
-	color: #db3552;
+    color: #db3552;
 }
 
 
 i {
-	color: black;
+    color: black;
 }
 
 .padbot {
-	padding-bottom: 210px;
+    padding-bottom: 210px;
 }
 
 .padbotins {
-	padding-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -76,10 +76,10 @@ div.a {
 } 
 
 .register {
-	height: 87vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url(../images/register2.jpg); 
+    height: 87vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/register2.jpg); 
 }
 
 /* Full-width input fields */
@@ -152,16 +152,16 @@ button:hover {
 
 
 .line {
-	border-top: 2px solid #aaa;
+    border-top: 2px solid #aaa;
 }
 
 
 .terms {
-	Color: dodgerblue;
+    Color: dodgerblue;
 }
 
 .footer {
-	height: 5.5vh;
+    height: 5.5vh;
 }
 
 .fa-facebook-square,
@@ -175,8 +175,86 @@ button:hover {
     font-size: 17px;
     
 }
+/*hover*/
+section {
+    padding: 60px 0;
+    
+    width: 100vw;
+    height: 87vh;
+}
+
+#pets {
+    background-image: url(../images/grass.jpg);
+    background-size: cover; 
+}
+
+section .section-title {
+    text-align: center;
+    color: #1f9400;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
 
 
+#pets .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    transform: rotateY(-180deg);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
 
 
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #1f9400;
+}
 
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
