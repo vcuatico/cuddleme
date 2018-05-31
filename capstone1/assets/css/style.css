@@ -17,7 +17,7 @@ body {
 /*    background: #f2f2f2;
     height: 100%;
     width: 100%;*/
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Indie Flower', cursive;
 }
 
 .navbar {
@@ -76,7 +76,7 @@ div.a {
 } 
 
 .register {
-    height: 87vh;
+    height: 105vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/register2.jpg); 
@@ -99,7 +99,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 hr {
     border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 /* Set a style for all buttons */
@@ -107,7 +107,7 @@ button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    /*margin: 8px 0;*/
     border: none;
     cursor: pointer;
     /*width: 100%;*/
@@ -128,6 +128,7 @@ button:hover {
 .cancelbtn, .signupbtn {
   float: left;
   width: 50%;
+  margin-bottom: 50px;
 }
 
 /* Add padding to container elements */
@@ -157,11 +158,14 @@ button:hover {
 
 
 .terms {
-    Color: dodgerblue;
+    color: dodgerblue;
 }
 
-.footer {
-    height: 5.5vh;
+.footerReg {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
 }
 
 .fa-facebook-square,
@@ -184,8 +188,10 @@ section {
 }
 
 #pets {
-    background-image: url(../images/grass.jpg);
+    background-image: url(../images/bg2.jpg);
     background-size: cover; 
+    height: 100%;
+    background-attachment: fixed;
 }
 
 section .section-title {
@@ -258,3 +264,57 @@ section .section-title {
     height: 120px;
     border-radius: 50%;
 }
+
+#carouselIndicators {
+    /*height: 80vh;*/
+
+}
+
+/*.footerLanding {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/
+
+#contLand {
+    /*background-color: black;*/
+}
+
+/*
+.parallax { 
+     The image used 
+    background-image: url("../images/bg1.jpg");
+
+     Set a specific height 
+    height: 100%; 
+
+     Create the parallax scrolling effect 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+
+.carousel-caption {
+    color: black;
+}
+
+
+
+/*media queries*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { ... }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
